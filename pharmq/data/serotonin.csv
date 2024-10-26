@@ -1,0 +1,15 @@
+Drug,Mechanism,Clinical Effect,Adverse Effect
+Cisapride,5-HT4 agonist (Gs),刺激腸胃蠕動,心臟毒性 (tacycardia)
+Tegaserod,5-HT4 partial agonist (Gs),Irritable bowel syndrome with constipation,
+Prucalopride,5-HT4 partial agonist (Gs),Chronic constipation in women,
+"Alosetron (3sec, ion)",5-HT3 antagonist (ion),Women with severe IBS with diarrhea,"不能連續使用, 30%會便秘, 0.3%腸道缺血"
+Fluoxetine,SSRI,Antidepressants,"半衰期長,需隔4週以上才能改用MAOI (synergistic effect)"
+"Sertraline, Paroxetine, Citalopram",SSRI,Antidepressants,"半衰期短, 太快停藥造成一週dizziness"
+MAOI (MAO inhibitors → 5-HT濃度維持),,"Serotonin + MAOI → Serotonin syndrome (感心興吐焦慮體溫過高失眠腸胃血壓, 大多了時要用benzodiazepine跟blocker支持性療法)"
+Buspirone,5-HT1 agonist (Gi),抗焦慮用藥,
+"Triptans (重要): suma, almo-triptan",5-HT1 agonist (Gi),治療migraine headache,"Coronary vasospasm (contraindication for coronary diseases, 心絞痛) Sumatriptan: oral, injection, nasal spray (IV太強效)"
+"Ergot alkaloids: ergotamine, dihydroergotamine",5-HT1 agonist (Gi),"治療migraine headache, 妊娠禁用, 不要使用其他”trip” Migraine的痛: 可用beta-blocker預防"trip"","更多, 如gangrene (intense peripheral vasoconstriction)"
+Ergonovine,5-HT1 agonist (Gi),生產後止血,gangrene
+Ondansetron,5-HT3 antagonist (ion),Cancer therapy-induced nausea/vomiting,Constipation
+Ketanserin,5-HT2 antagonist (Gq),"Hypertension (a-blocker, 不會太低)",
+Ritanserin,5-HT2 antagonist (Gq),Thrombosis,

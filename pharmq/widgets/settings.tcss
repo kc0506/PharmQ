@@ -1,0 +1,43 @@
+/* Settings Modal Styles */
+#settings-dialog {
+    background: $panel;
+    padding: 1;
+    border: solid $primary;
+    min-width: 40;
+    max-width: 60;
+    margin: 1 2;
+    height: auto;
+}
+
+#settings-title {
+    text-align: center;
+    text-style: bold;
+    padding: 1;
+    border-bottom: solid $primary;
+}
+
+#settings-content {
+    padding: 1;
+    height: auto;
+}
+
+#settings-content Checkbox {
+    margin: 1 0;
+    padding: 0 1;
+}
+
+#settings-buttons {
+    height: auto;
+    padding: 1;
+    align-horizontal: right;
+}
+
+#settings-buttons Button {
+    margin-left: 1;
+    min-width: 8;
+}
+
+/* Position the settings button in the Header */
+SettingsButton {
+    dock: right;
+}

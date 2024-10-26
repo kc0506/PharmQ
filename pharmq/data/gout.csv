@@ -1,0 +1,8 @@
+Drug,Mechanism,Clinical,Adverse
+NSAIDs,COX inhibitor,"解熱, 鎮痛, 抗發炎!","GI, CV, Renal, Pregnancy, Hypersensitivity, Hepatotoxicity, Reye syndrome"
+Colchicine,"抗有絲分裂, 減少neutrophil活化, cytokine放",最古老急性痛風治療用藥,"Narrow therapeutic window, 副作用多 (二線), 胃腸道毒性, 抑制骨髓 (myelosuppression)"
+Steroid,"Anti-inflammatory action & immunosuppression",Suppress Inflammatory & Immune Responses,Cushing syndrome
+Allopurinol,"Analogue of hypoxanthine (-| xanthine oxidase)","預防hyperuricemia (不能用在急性痛風！)",嚴重過敏反應 (HLA-B*58:01基因型相關)
+Febuxostat,"Non purine inhibitor, -| xanthine oxidase","預防hyperuricemia (不能用在急性痛風！) (Reduce urate production)","肝毒性, MI, stroke risk, 非一線用藥"
+Probenecid,"抑制尿酸再吸收, 抑制藥物在腎或膽汁分泌","預防hyperuricemia (不能用在急性痛風！) (Increase urate secretion: uricosurics)",Contraindicated for 腎結石nephrolithiasis
+Benzbromarone,"同上, 代謝方式不同 (-|urate-anion exchanger)","預防hyperuricemia (不能用在急性痛風！)","肝毒性"

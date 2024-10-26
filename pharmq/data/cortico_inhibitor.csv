@@ -1,0 +1,10 @@
+Drug,Mechanism,Clinical use,Adverse effect
+Aminoglutethimide,-| CYP11A1 (-| cholesterol → pregnenolone),"Estrogen-dependent breast cancer 乳癌賀爾蒙療法","多, 今少用 (非選擇性抑制)"
+Ketoconazole,"非專一性, CYP17 & 3β-HSD","抗真菌藥物 (抑制細胞膜), 治療Cushing’s syndrome","肝毒性, 孕婦不可使用"
+Metyrapone,-| CYP11B1 (→ cortisol),"監測腎上腺, 腎垂腺功能, 孕婦Cushing’s syndrome","婦女多毛症"
+Etomidate,"-|CYP11B1 (低劑量時)","麻醉用藥, 有時治療Cushing’s syndrome",
+"Inhibitors of adrenocorticoid function (Receptor antagonists)",,,
+Mitotane,Adrenal cortex cytotoxicity,治療腎上腺腫瘤,"促進細胞凋亡, 毒性強, 少用"
+Mifepristone,"Antagonist of peripheral GR, PR","Cushing syndrome, contraception, abortion",
+Spironolactone (上課要帶 spiral notebook + 水 (diuretic)),"Antagonist of MR & AR, 抑制納再吸收","Hypertension, hyperaldosteronism, hirsutism 多毛症","Hyperkalemia, 男性女乳症, 經期不規則"
+Eplerenone,Specific MR antagonist,"Hypertension, HF",

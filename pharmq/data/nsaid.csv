@@ -1,0 +1,12 @@
+Drug,Characteristic,Clinical,Adverse Effects
+Aspirin,Irreversibly inhibits COX (covalent),"- low-dose: cardioprotection, 預防pre-eclampsia","Reye syndrome (罕見), GI: 潰瘍傾後後, 隨劑"
+Salicylates,Weak & reversible inhibitor of COX,,Reye syndrome (罕見)
+Diclofenac,COX-2 selective (lower GI disturbance),安胎,"Hypertension, cardiovascular problems"
+Indomethacin,,"Closure of patent ductus arteriosus, 預防早產",胎兒ductus arteriosus提早關閉
+Ketorolac,,,
+"Ibuprofen (EVE, Advil)",,,Safer for children
+Naproxen,,,
+Meloxicam,COX-2 selective (lower GI disturbance),安胎,Hypertension
+Celecoxib,COX-2 selective (lower GI disturbance),安胎,"MI, stroke, vascular-related deaths ↑"
+Etoricoxib,COX-2 selective (lower GI disturbance),安胎,Hypertension
+Acetaminophen,無抗發炎,Safer for children,過量肝毒性 (antidote: NAC)
