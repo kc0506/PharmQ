@@ -1,7 +1,5 @@
 from typing import NamedTuple
 
-import pandas as pd
-
 # class Subgroup(NamedTuple):
 #     category_id: str
 #     category_title: str
@@ -16,8 +14,10 @@ class Category(NamedTuple):
     # title: str
     # subgroups: list[Subgroup]
     id: str
-    data: pd.DataFrame
+    # data: pd.DataFrame
+    data: list[dict[str, str]]
     fields: list[str]
+    answer_field: str
 
     @property
     def title(self):

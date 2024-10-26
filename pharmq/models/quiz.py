@@ -2,8 +2,6 @@ import random
 from dataclasses import dataclass
 from typing import List, Tuple
 
-import pandas as pd
-
 from .category import Category
 
 
@@ -52,15 +50,29 @@ class QuizGenerator:
         category_name: str = random.choice(list(available_categories))
         category: Category = self.categories[category_name]
 
+        # # Select random row
+        # answer_column: str = category.data.columns[0]
+        # df: pd.DataFrame = category.data
+        # row_idx: int = df.sample(n=1).index[0]
+        # row: pd.Series = df.iloc[row_idx]
+        # answer: str = str(row[answer_column])
+
+        # # Generate incorrect options
+        # other_indices: List[int] = df[df[answer_column] != answer].index.tolist()
+
         # Select random row
-        answer_column: str = category.data.columns[0]
-        df: pd.DataFrame = category.data
-        row_idx: int = df.sample(n=1).index[0]
-        row: pd.Series = df.iloc[row_idx]
-        answer: str = str(row[answer_column])
+        data: list[dict[str, str]] = category.data
+        answer_field: str = category.answer_field
+        row_idx: int = random.randrange(len(data))
+        row: dict[str, str] = data[row_idx]
+        answer: str = row[answer_field]
 
         # Generate incorrect options
-        other_indices: List[int] = df[df[answer_column] != answer].index.tolist()
+        other_indices: List[int] = [
+            idx
+            for idx, r in enumerate(data)
+            if idx != row_idx and r[answer_field] != answer
+        ]
 
         # Create options
         options: List[QuizOption] = [
@@ -84,7 +96,8 @@ class QuizGenerator:
         for idx in selected_indices:
             options.append(
                 QuizOption(
-                    text=str(df.iloc[idx][answer_column]),
+                    # text=str(df.iloc[idx][answer_column]),
+                    text=str(data[row_idx][answer_field]),
                     category_name=category_name,
                     row_index=idx,
                     is_correct=False,
@@ -98,9 +111,7 @@ class QuizGenerator:
 
         # Get characteristics for the question
         characteristics = {
-            field: str(row[field])
-            for field in category.fields
-            if pd.notna(row[field]) and row[field] != ""
+            field: str(row[field]) for field in category.fields if row[field]
         }
 
         return QuizQuestion(

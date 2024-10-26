@@ -1,6 +1,5 @@
 from typing import Dict, Unpack
 
-import pandas as pd
 from textual.app import ComposeResult
 from textual.containers import Container, Horizontal, ScrollableContainer, Vertical
 from textual.widgets import DataTable, Label, Static, Tree
@@ -62,14 +61,30 @@ class CategoryTable(Static):
                     )
                     self.table = table
 
+                    # # Add columns
+                    # answer_column = category.data.columns[0]
+                    # table.add_columns(answer_column, *category.fields)
+
+                    # # Add rows with multi-line support
+                    # row_keys = []
+                    # for _, row in category.data.iterrows():
+                    #     table_row = [self.format_cell_content(row[answer_column])]
+                    #     table_row.extend(
+                    #         self.format_cell_content(row[field])
+                    #         for field in category.fields
+                    #     )
+                    #     key = table.add_row(*table_row, height=2)
+                    #     row_keys.append(key)
+
                     # Add columns
-                    answer_column = category.data.columns[0]
-                    table.add_columns(answer_column, *category.fields)
+                    table.add_columns(category.answer_field, *category.fields)
 
                     # Add rows with multi-line support
                     row_keys = []
-                    for _, row in category.data.iterrows():
-                        table_row = [self.format_cell_content(row[answer_column])]
+                    for row in category.data:
+                        table_row = [
+                            self.format_cell_content(row[category.answer_field])
+                        ]
                         table_row.extend(
                             self.format_cell_content(row[field])
                             for field in category.fields
@@ -84,7 +99,8 @@ class CategoryTable(Static):
 
     def format_cell_content(self, content: str) -> str:
         """Format cell content with proper line breaks."""
-        if pd.isna(content):
+        if content is None:
+        # if pd.isna(content):
             return "-"
         return str(content).replace(";", "\n")
         return str(content).replace(";", "\n")

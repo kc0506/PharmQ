@@ -1,6 +1,5 @@
 from typing import Mapping
 
-import pandas as pd
 from rich.table import Table
 from rich.text import Text
 from textual import on
@@ -97,6 +96,7 @@ class QuizQuestionWidget(Static):
 # def create_characteristics_table(row: pd.Series, fields: list[str]) -> Table:
 def create_characteristics_table(fields: Mapping[str, str]) -> Table:
     """Create a rich table for characteristics."""
+
     table = Table(
         show_header=False,
         show_lines=True,
@@ -108,7 +108,7 @@ def create_characteristics_table(fields: Mapping[str, str]) -> Table:
     table.add_column("Description", style="white")
 
     for field in fields:
-        if not pd.isna(fields[field]) and fields[field] != "":
+        if fields[field]:
             table.add_row(f"● {field}", str(fields[field]))
 
     return table

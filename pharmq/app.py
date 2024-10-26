@@ -1,7 +1,6 @@
 import random
 from typing import Dict
 
-import pandas as pd
 from rich.text import Text
 from textual import on
 from textual.app import App, ComposeResult
@@ -93,7 +92,9 @@ class DrugQuizApp(App):
         quiz_widget.set_question(question)
 
         category_text = Text("Category: ", style="grey50")
-        category_text.append(self.categories[question.category_name].title, style="grey70")
+        category_text.append(
+            self.categories[question.category_name].title, style="grey70"
+        )
         self.query_one("#category", Static).update(category_text)
 
         # Create and update table display
