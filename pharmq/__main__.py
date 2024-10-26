@@ -5,5 +5,5 @@ Server(
     "python3 -m pharmq.app",
     host="0.0.0.0",
     port=7414,
-    public_url="https://pharmq.onrender.com/",
+    public_url="https://pharmq.onrender.com",
 ).serve()
